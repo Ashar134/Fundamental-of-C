@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main ()
+{
+ int x,y,z;
+ printf("Enter one side=");
+ scanf("%d",&x);
+ printf("Enter second side=");
+ scanf("%d",&y);
+ printf("Enter the third side=");
+ scanf("%d",&z);
+ if ( x==y && y==z && z==x )
+ {
+ printf("It is equilateral triangle");
+ }
+ 
+ else if ( x==y || y==z || z==x )
+ {
+ printf("Its Isosceles Triangle");
+ }
+ else
+ {
+ printf("It is scalene triangle");
+ }
+ return 0;
+}

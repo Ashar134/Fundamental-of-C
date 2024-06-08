@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main ()
+{
+ int total1, total2, total3,a,b,c,d;
+ int cookies,box;
+ printf("Total no of cookies=");
+ scanf("%d",&total1);
+ printf("No of cookies in a box=");
+ scanf("%d",& total2);
+ printf("Number of cookie boxes in a container=");
+ scanf("%d",&total3);
+ a=total1/total2; //quotient of this value is the "no. of boxes" 
+ b=total1%total2; //modulus of this value is the "number of leftover cookies"
+ c=a/total3; //Dividing "no. of boxes" with "no. of cookies box in container"
+ d=a%total3; //quotient of this value calculate "boxes leftover"
+ 
+ if ((a!=0 || b!=0 || c!=0 || d!=0) ) //condition if a,b,c & d is not equal to zero 
+ 
+{
+ printf("no of boxes=%d\n",a);
+ printf("number of leftover cookies remain=%d\n",b);
+ printf("no of container to ship the box=%d\n",c);
+ printf("no of leftover boxes remain=%d\n",d);
+ }else
+ {
+ printf("Nothing left"); //if nothing left print this
+ }
+ 
+ return 0; 
+} 
